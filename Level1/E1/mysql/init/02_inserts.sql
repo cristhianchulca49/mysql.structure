@@ -21,7 +21,7 @@ VALUES
 ('Oakley', 1),
 ('Prada', 2);
 
-INSERT INTO glasses (brand_id, left_prescription, right_prescription, frame_type, frame_color, glass_color, price)
+INSERT INTO glasses (brand_id, left_prescription, right_prescription, frame_type, frame_color, lens_color, price)
 VAlUES 
 (1, -1.25, -1.00, 'plastic', 'black', 'transparent', 120.50),
 (2, -0.75, -0.50, 'metal', 'silver', 'blue', 200.00),
@@ -40,13 +40,22 @@ UPDATE customer SET recommended_by = 4 WHERE customer_id = 4;
 
 INSERT INTO employee (employee_name)
 VALUES
-('Laura Pérez'),
-('Carlos Gómez');
+('María Torres'),
+('Pablo Ruiz'),
+('Lucía Gómez');
 
 INSERT INTO sale (customer_id, glasses_sold_id, employee_id, sale_date, total_price)
 VALUES
-(1, 1, 1, '2025-12-03', 120.50),
-(2, 1, 2, '2025-12-03', 200.00);
 
-
-
+(1, 1, 1, '2024-11-15', 120.50),
+(1, 2, 2, '2025-02-10', 200.00),
+(2, 2, 2, '2024-12-20', 200.00),
+(2, 3, 1, '2025-03-05', 175.00),
+(3, 3, 3, '2024-10-03', 175.00),
+(3, 1, 2, '2025-01-12', 120.50),
+(4, 1, 1, '2025-09-25', 120.50),
+(4, 2, 3, '2024-04-18', 200.00),
+(4, 3, 2, '2024-03-09', 175.00),
+(5, 2, 2, '2024-08-07', 200.00),
+(5, 3, 1, '2024-06-09', 175.00),
+(5, 1, 3, '2025-04-27', 120.50);

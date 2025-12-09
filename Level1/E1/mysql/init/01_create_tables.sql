@@ -36,7 +36,7 @@ CREATE TABLE Glasses (
     right_prescription DECIMAL(4,2) NOT NULL,
     frame_type ENUM('floating','plastic','metal') NOT NULL,
     frame_color VARCHAR(30),
-    glass_color VARCHAR(30),   
+    lens_color VARCHAR(30),   
     price DECIMAL(5,2) NOT NULL,
     FOREIGN KEY (brand_id) REFERENCES Brand(brand_id)
     );
