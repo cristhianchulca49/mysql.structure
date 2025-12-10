@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  pizzeria_db:
+    image: mysql:8.0
+    container_name: pizzeria_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: pizzeria
+      MYSQL_USER: pizzeria_user
+      MYSQL_PASSWORD: pizzeria_pass
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
